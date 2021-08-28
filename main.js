@@ -82,7 +82,7 @@ function up()
 function down()
 {
 	//Define function to move the car downward
-	if (greencar_y <=500)
+	if (greencar_y <=350)
     {
         greencar_y = greencar_y + 10;
         console.log("When down arrow is pressed, x = " + greencar_x + "| y = " +greencar_y);
@@ -95,7 +95,7 @@ function left()
 {
 	//Define function to move the car left side
 	
-if (greencar_x <= 500)
+if (greencar_x >= 0)
 {
 	greencar_x = greencar_x - 10;
 	console.log("When left arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);
@@ -109,7 +109,7 @@ if (greencar_x <= 500)
 function right()
 {
 	//Define function to move the car right side
-	if (greencar_x >= 0)
+	if (greencar_x <= 750)
 {
 	greencar_x = greencar_x + 10;
 	console.log("When right arrow is pressed, x = " + greencar_x + " | y = " +greencar_y);
